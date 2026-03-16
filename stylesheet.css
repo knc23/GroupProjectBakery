@@ -7,6 +7,7 @@ body {
 .topnav {
   background-color: #ffb3c6;
   overflow: hidden;
+  align-content: center;
 }
 
 .topnav a {
@@ -22,3 +23,49 @@ body {
   background-color: #ffc2d1;
   color: white;
 }
+
+img { 
+   display: block;
+  margin: auto;
+}
+
+.boxheading {
+  width: 1800px;
+    height: 200px;
+    border: 1px solid rgb(255, 0, 149);
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Creating Boxes Side by Side to eachother */
+.box {
+	float: left;
+	width: 25%;
+	padding: 50px;
+	border: 1px solid black;
+  }
+
+  .box2 {
+	float: left;
+	width: 50%;
+	padding: 25px;
+	border: 1px solid black;
+  }
+  
+  
+  .clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  .fltlt {
+	float: left;
+	margin-right: 8px;
+   }
+   .fltrt {
+	float: right;
+	margin-left: 16px;
+   }
+	.clear {
+	clear: both;
+   }
