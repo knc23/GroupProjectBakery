@@ -30,7 +30,6 @@ img {
 }
 
 .boxheading {
-  width: 1800px;
     height: 200px;
     border: 1px solid rgb(255, 0, 149);
     padding: 10px;
@@ -69,3 +68,31 @@ img {
 	.clear {
 	clear: both;
    }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "catering-desc catering-form"
+      "catering-menu catering-menu";
+    grid-template-columns: 2fr 2fr;
+    gap: 3px;
+    background-color: #ffb3c6;
+    padding: 5px;
+  }
+
+  .grid-container div {
+    background-color:#ffc2d1;
+    padding: 10px;
+  }
+
+  .grid-container div.catering-desc {
+    grid-area: catering-desc;
+  }
+
+  .grid-container div.catering-form {
+    grid-area: catering-form;
+  }
+
+  .grid-container div.catering-menu {
+    grid-area: catering-menu;
+  }
